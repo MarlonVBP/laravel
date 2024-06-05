@@ -20,7 +20,7 @@ Route::post('/contato', [App\Http\Controllers\ContatoController::class, 'contato
 
 Route::get('/sobrenos', [App\Http\Controllers\SobreNosController::class, 'sobreNos'])->name('site.sobrenos');
 
-Route::get('/login', [App\Http\Controllers\SobreNosController::class, 'login'])->name('site.login');
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'login'])->name('site.login');
 
 Route::prefix('app')->group(function(){
     Route::get('/fornecedores', [App\Http\Controllers\FornecedoresController::class, 'fornecedores'])->name('app.fornecedores');
